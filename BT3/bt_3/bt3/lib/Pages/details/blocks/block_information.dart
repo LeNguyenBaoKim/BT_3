@@ -6,6 +6,7 @@ class Information extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 30, left: 20),
@@ -77,11 +78,8 @@ class Information extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 80, top: 35),
-          child: Image(
-            image: AssetImage('assets/images/unnamed 2.png'),
-          ),
+        Image(
+          image: AssetImage('assets/images/unnamed 2.png'),
         ),
       ],
     );

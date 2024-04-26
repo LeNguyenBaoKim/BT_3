@@ -30,7 +30,7 @@ class BlocksPopular extends StatelessWidget {
           child: Column(
             children: [
               PopularOne(image: 'assets/images/pizza-1.png'),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               PopularOne(image: 'assets/images/pizza-1.png'),

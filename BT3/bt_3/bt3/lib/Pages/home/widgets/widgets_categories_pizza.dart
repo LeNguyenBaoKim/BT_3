@@ -10,6 +10,9 @@ class Pizza extends StatelessWidget {
         Container(
           width: 105,
           height: 177,
+          margin: EdgeInsets.only(
+            right: 20,
+          ),
           decoration: BoxDecoration(
             color: Color(0xffF5CA48),
             borderRadius: BorderRadius.circular(20),

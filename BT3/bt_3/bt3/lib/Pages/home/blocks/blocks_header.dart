@@ -6,31 +6,26 @@ class BlocksHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          margin: EdgeInsets.only(top: 30, right: 344),
-          child: Text(
-            'Food',
-            style: TextStyle(
-              color: Color(0xFF313234),
-              fontSize: 16,
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w400,
-              height: 0,
-            ),
+        Text(
+          'Food',
+          style: TextStyle(
+            color: Color(0xFF313234),
+            fontSize: 16,
+            fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w400,
+            height: 0,
           ),
         ),
-        Container(
-          margin: EdgeInsets.only(top: 5, right: 255),
-          child: Text(
-            'Delivery',
-            style: TextStyle(
-              color: Color(0xFF313234),
-              fontSize: 32,
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w700,
-              height: 0,
-            ),
+        Text(
+          'Delivery',
+          style: TextStyle(
+            color: Color(0xFF313234),
+            fontSize: 32,
+            fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w700,
+            height: 0,
           ),
         ),
       ],

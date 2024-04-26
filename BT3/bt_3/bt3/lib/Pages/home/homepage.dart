@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/Pages/home/blocks/blocks_categories.dart';
 import 'package:flutter_application_1/Pages/home/blocks/blocks_header.dart';
 import 'package:flutter_application_1/Pages/home/blocks/blocks_menu.dart';
@@ -10,25 +11,37 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         BlocksMenu(),
-        BlocksHeader(),
-        BlocksSearch(),
-        Padding(
-          padding: const EdgeInsets.only(top: 30, right: 284),
-          child: Text(
-            'Categories',
-            style: TextStyle(
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w700,
-              fontSize: 16,
-              height: 2,
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                BlocksHeader(),
+                BlocksSearch(),
+                Padding(
+                  padding: const EdgeInsets.only(top: 30, right: 284),
+                  child: Text(
+                    'Categories',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      height: 2,
+                    ),
+                  ),
+                ),
+                BlocksCategories(),
+                BlocksPopular(),
+                SizedBox(
+                  height: 20,
+                ),
+              ],
             ),
           ),
         ),
-        BlocksCategories(),
-        BlocksPopular(),
       ],
     );
   }
